@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Moriarty">
+    <meta name="description" content="Portfólio de James Moriarty, desenvolvedor web.">
+    <meta name="keywords" content="Desenvolvedor, Web, HTML, CSS, JavaScript, Portfólio, James Moriarty">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>James Moriarty Desenvolvedor Web</title>
+</head>
+
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo"> James Moriarty</a>
+            </div>
+<!-- comentario -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"> Sobre</a></li>
+                    <li class="nav-item"><a href="#formation" class="nav-link"> Formação</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link"> Habilidades</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">Olá, <br>Eu sou o <span class="home-title-color">James
+                        Moriarty</span><br>Desenvolvedor Web
+                </h1>
+                <a href="#contact" class="button">Contato</a>
+            </div>
+
+            <div class="home-img">
+                <br>
+                <br>
+                <img src="./imagens/profile.jpeg" width="300" height="450" alt="Foto do Moriarty" title="Moriarty" />
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Olá, eu sou o Moriarty</h2>
+                    <p class="about-text"> Sou estudante em ADS Fatec Sorocaba-SP<br>
+                        Sou apaixonado por criar aplicativos... Estou à disposição para novas oportunidades
+                    </p>
+                    <br><br>
+                    <h3>Minha Filosofia</h3>
+                    <q>O melhor código é aquele que resolve o problema do usuário com elegância e eficiência</q>
+                    <blockquote cite="https://seulink.com">
+                        O que vale na vida não é o ponto de partida e sim a caminhada.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="formation section" id="formation">
+            <h2 class="section-title">Formação</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Graduação</u></h3>
+                <p> Tecnologia em Análise e Desenvolvimento de Sistemas <br>
+                    Fatec Sorocaba - SP
+                    Período: 2026 a 2028. </p>
+                <br>
+                <br>
+                <h3><u>Complementar</u></h3>
+                <ol>
+                    <li>Python - Alura (52 horas)</li>
+                    <li>Spring Boot - Alura (30 horas)</li>
+                </ol>
+            </div>
+
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">
+                        Habilidades Profissionais</h2>
+                    <p class="skills-text">
+                        Minhas habilidade são focadas em
+                        <strong>desenvolvimento</strong>
+                        <b>web</b>,
+                        incluindo <abbr title="HyperText Markup Language">HTML</abbr>, CSS, JavaScript e vários
+                        <i>frameworks</i>.
+                    </p>
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percent">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skills-bar skills-css"></div>
+                        <div>
+                            <span class="skills-percent">75%</span>
+                        </div>
+                    </div>                   
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+                        <div>
+                            <span class="skills-percent">70%</span>
+                        </div>
+                    </div>
+
+                    <h3>Soft skills</h3>
+                    <dl>
+                        <dt><em>Comunicação</em></dt>
+                        <dd> Liderança e Apresentações</dd>
+                        <dt><em>Trabalho em Equipe</em></dt>
+                        <dd>Equipes de marketing e vendas para lançamento novo produto</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects-text">
+                <h3>Tabela de Projetos</h3>
+                <br>
+                <table class="projects-table">
+                    <thread>
+                        <tr>
+                            <th>Projetos</th>
+                            <th>Tecnologias</th>
+                            <th>Status</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr>
+                            <td>Site Pessoal</td>
+                            <td>HTML, CSS, JS</td>
+                            <td>Concluido</td>
+                        </tr>
+                        <tr>
+                            <td>SIte Institucional da Alpha</td>
+                            <td>React, Node.js</td>
+                            <td>Em progresso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="projects-container bd-grid">
+                <div class="projects-img">
+                    <figure>
+                        <a href="https://github.com/GuilhermeJSP" target="_blank">
+                            <img src="./imagens/projects-1.jpg" alt="imagem do primeiro projeto" width="300"
+                                height="300">
+                        </a>
+                        <figcaption>Projeto Site Pessoal </figcaption>
+                    </figure>
+                </div>
+                <div class="projects-img">
+                    <figure>
+                        <a href="https://github.com/GuilhermeJSP" target="_blank">
+                            <img src="./imagens/projects-2.jpg" alt="imagem do segundo projeto" width="300"
+                                height="300">
+                        </a>
+                        <figcaption>Projeto Site Pessoal </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+         <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container bd-grid">
+ 
+                <a href="https://www.instagram.com/guih_js?igsi=MXdqanVtM2lobzRhZw%3D%3D"target="_blank">
+                    <img src="./imagens/insta.png" width="100"
+                    height="100" alt="logo do instagram"></a>
+ 
+                <a href="https://wa.me/551599999999"target="_blank">
+                    <img src="./imagens/whatsapp.png" width="100"
+                     height="100"></a>
+ 
+                <a href="https://www.linkedin.com/in/guilherme-jos%C3%A9-da-silva-penha-211027122/?skipRedirect=true"target="_blank">
+                    <img src="./imagens/linkedin.png" width="100"
+                     height="100"></a>
+ 
+                <a href="https://github.com/GuilhermeJSP"target="_blank">
+                    <img src="./imagens/github.png" width="100"
+                     height="100"></a>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <p id="footer-title">Criado na aula </p>
+        <p>&copy;Todos os direitos reservados. </p>
+    </footer>
+
+
+</body>
+
+</html>
