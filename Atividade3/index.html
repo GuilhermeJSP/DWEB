@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Guilherme">
+    <meta name="description" content="Pesquisa sobre APIs e Integrações.">
+    <meta name="keywords" content="APIs, Integrações, REST, SOAP, GraphQL, gRPC">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>APIs e Integrações</title>
+</head>
+
+<body>
+
+    <header class="header-1">
+
+        <nav class="nav">
+
+            <div>
+                <a href="#home" class="nav-logo">APIs e Integrações</a>
+            </div>
+
+            <div class="nav-menu">
+
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#conceitos" class="nav-link">Conceitos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#tipos" class="nav-link">Tipos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#ferramentas" class="nav-link">Ferramentas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#beneficios" class="nav-link">Benefícios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#exemplos" class="nav-link">Exemplos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#conclusao" class="nav-link">Conclusão</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#referencias" class="nav-link">Referências</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="home" id="home">
+
+            <div class="home-data">
+
+                <h1 class="home-title">
+                    APIs e<br>
+                    <span class="home-title-color">Integrações</span><br>
+                    de Software
+                </h1>
+
+                <p>
+                    Conceitos, tipos, arquiteturas, ferramentas,
+                    benefícios e aplicações.
+                </p>
+
+            </div>
+
+
+            <div class="home-img">
+
+                <img src="./imagens/apiperfil.jpg"
+                    width="350"
+                    height="300"
+                    alt="Servidores de computador"
+                    title="Infraestrutura de tecnologia">
+
+            </div>
+
+        </section>
+
+
+        <section class="conceitos section" id="conceitos">
+
+            <h2 class="section-title">Conceitos Fundamentais</h2>
+
+            <div class="conceitos-container">
+
+                <div>
+
+                    <h3 class="conceitos-subtitle">O que é uma API?</h3>
+
+                    <p class="conceitos-text">
+                        API é a sigla para <strong>Application Programming Interface</strong>,
+                        ou Interface de Programação de Aplicações. Trata-se de um conjunto
+                        de definições, regras e mecanismos que determina como diferentes
+                        componentes de software podem se comunicar.
+                    </p>
+
+                    <p class="conceitos-text">
+                        Uma API funciona como uma interface entre o consumidor e o sistema
+                        que fornece determinada funcionalidade. O consumidor não precisa
+                        conhecer toda a implementação interna do sistema, apenas as regras
+                        necessárias para realizar uma operação.
+                    </p>
+
+                    <p class="conceitos-text">
+                        É importante destacar que uma API não é necessariamente uma API Web.
+                        Existem APIs de bibliotecas de programação, sistemas operacionais,
+                        bancos de dados e outros componentes. Entretanto, as APIs Web,
+                        normalmente baseadas em HTTP, são atualmente algumas das formas
+                        mais utilizadas de integração entre aplicações.
+                    </p>
+
+                    <p class="conceitos-text">
+                        Uma analogia comum é a de um restaurante: o cliente representa a
+                        aplicação que solicita uma operação, o garçom representa a API e
+                        a cozinha representa o sistema responsável pelo processamento.
+                        O cliente faz um pedido seguindo as opções disponíveis no cardápio,
+                        e o garçom encaminha a solicitação para a cozinha, retornando
+                        posteriormente o resultado.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="tipos section" id="tipos">
+
+            <h2 class="section-title">Tipos de APIs e Arquiteturas</h2>
+
+            <div class="tipos-container">
+
+                <h3>Tipos quanto ao acesso</h3>
+
+                <ul>
+
+                    <li>
+                        <strong>APIs Privadas:</strong> utilizadas dentro de uma organização
+                        para conectar aplicações e sistemas corporativos.
+                    </li>
+
+                    <li>
+                        <strong>APIs de Parceiros:</strong> disponibilizadas para parceiros
+                        comerciais ou organizações específicas.
+                    </li>
+
+                    <li>
+                        <strong>APIs Públicas:</strong> disponibilizadas para desenvolvedores
+                        externos, geralmente acompanhadas de documentação.
+                    </li>
+
+                </ul>
+
+
+                <h3>Arquiteturas e estilos de comunicação</h3>
+
+                <ol>
+
+                    <li>
+                        <strong>REST:</strong> estilo arquitetural muito utilizado em APIs Web,
+                        normalmente utilizando HTTP e JSON.
+                    </li>
+
+                    <li>
+                        <strong>SOAP:</strong> protocolo baseado principalmente em XML,
+                        utilizado em diversos ambientes corporativos.
+                    </li>
+
+                    <li>
+                        <strong>GraphQL:</strong> linguagem de consulta que permite ao cliente
+                        especificar exatamente quais dados deseja receber.
+                    </li>
+
+                    <li>
+                        <strong>gRPC:</strong> framework de alto desempenho utilizado
+                        principalmente na comunicação entre microsserviços.
+                    </li>
+
+                    <li>
+                        <strong>Webhooks:</strong> permitem que um servidor envie uma
+                        notificação quando determinada ação ocorre.
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <section class="ferramentas section" id="ferramentas">
+
+            <h2 class="section-title">Ferramentas e Tecnologias</h2>
+
+            <div class="ferramentas-container">
+
+                <div>
+
+                    <h3 class="ferramentas-subtitle">Principais ferramentas</h3>
+
+                    <p class="ferramentas-text">
+                        Existem diversas ferramentas utilizadas para desenvolver,
+                        testar, documentar e proteger APIs.
+                    </p>
+
+
+                    <div class="ferramentas-data">
+
+                        <div class="ferramentas-names">
+
+                            <p>
+                                <strong>Testes e Documentação</strong>
+                            </p>
+
+                            <p>
+                                Ferramentas como Postman e Insomnia permitem criar,
+                                enviar e testar requisições HTTP, facilitando o desenvolvimento
+                                e a validação de APIs. O OpenAPI é uma especificação utilizada
+                                para descrever APIs de forma padronizada. Ferramentas como
+                                Swagger podem utilizar essa especificação para gerar documentação
+                                interativa e facilitar o entendimento das operações disponíveis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ferramentas-data">
+
+                        <div class="ferramentas-names">
+
+                            <p>
+                                <strong>API Gateways</strong>
+                            </p>
+
+                            <p>
+                                Funcionam como uma camada intermediária entre os clientes e
+                                os serviços de uma aplicação, centralizando diferentes
+                                funcionalidades relacionadas ao gerenciamento das requisições.
+                                Entre suas principais funções estão o roteamento das requisições,
+                                a autenticação e autorização de usuários e sistemas, o controle
+                                de acesso, o rate limiting, o monitoramento, o registro das
+                                requisições e o gerenciamento do tráfego.
+                            </p>
+
+                            <p>
+                                Entre as principais soluções disponíveis no mercado estão
+                                Kong, Amazon API Gateway, Apigee e Tyk.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ferramentas-data">
+
+                        <div class="ferramentas-names">
+
+                            <p>
+                                <strong>Plataformas de Integração na Nuvem</strong>
+                            </p>
+
+                            <p>
+                                As plataformas de integração, também conhecidas como iPaaS
+                                (Integration Platform as a Service), oferecem recursos para
+                                conectar diferentes aplicações e serviços, muitas vezes utilizando
+                                abordagens de baixo código ou sem código. Entre os exemplos estão
+                                MuleSoft, Boomi, Zapier e Make. Essas plataformas podem facilitar
+                                integrações entre sistemas corporativos, serviços SaaS, bancos de
+                                dados e outras aplicações.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ferramentas-data">
+
+                        <div class="ferramentas-names">
+
+                            <p>
+                                <strong>Mensageria e Eventos</strong>
+                            </p>
+
+                            <p>
+                                Sistemas de mensageria permitem que aplicações se comuniquem
+                                de maneira assíncrona. Em vez de uma aplicação precisar aguardar
+                                diretamente a resposta de outra, uma mensagem pode ser enviada
+                                para um sistema de mensageria e processada posteriormente.
+                                Exemplos incluem Apache Kafka, RabbitMQ, Amazon SQS, Amazon SNS
+                                e NATS. Essas tecnologias são importantes em sistemas distribuídos
+                                porque ajudam a reduzir o acoplamento entre serviços e permitem
+                                o processamento assíncrono de grandes volumes de informações.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <h3>Segurança e autenticação</h3>
+
+                    <p>
+                        A segurança é um dos principais aspectos no desenvolvimento de APIs,
+                        especialmente quando elas permitem acesso a dados pessoais, financeiros
+                        ou corporativos. Entre os principais padrões e tecnologias utilizados estão:
+                    </p>
+
+
+                    <dl>
+
+                        <dt>
+                            <em>OAuth 2.0</em>
+                        </dt>
+
+                        <dd>
+                            Framework de autorização que permite que uma aplicação obtenha
+                            acesso limitado a recursos em nome de um usuário ou sistema.
+                        </dd>
+
+
+                        <dt>
+                            <em>OpenID Connect</em>
+                        </dt>
+
+                        <dd>
+                            Protocolo de autenticação construído sobre o OAuth 2.0, utilizado
+                            para permitir que aplicações verifiquem a identidade de um usuário.
+                        </dd>
+
+
+                        <dt>
+                            <em>JWT (JSON Web Token)</em>
+                        </dt>
+
+                        <dd>
+                            Formato compacto de token que pode ser utilizado para transportar
+                            informações de maneira estruturada.
+                        </dd>
+
+                    </dl>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="beneficios section" id="beneficios">
+
+            <h2 class="section-title">
+                Benefícios das APIs e Integrações
+            </h2>
+
+            <div class="beneficios-text">
+
+                <h3>Principais benefícios</h3>
+
+                <table class="beneficios-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Benefício</th>
+                            <th>Descrição</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Modularidade</td>
+                            <td>
+                                Permite reutilizar funcionalidades em diferentes aplicações.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Interoperabilidade</td>
+                            <td>
+                                Permite comunicação entre diferentes linguagens e tecnologias.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Automação</td>
+                            <td>
+                                Permite automatizar tarefas realizadas manualmente.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Escalabilidade</td>
+                            <td>
+                                Permite dimensionar componentes de forma independente.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Inovação</td>
+                            <td>
+                                Possibilita a criação de novos produtos e serviços.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="exemplos section" id="exemplos">
+
+            <h2 class="section-title">Exemplos Práticos</h2>
+
+            <div class="exemplos-container">
+
+
+                <div class="exemplos-img">
+
+                    <figure>
+
+                        <img src="./imagens/pagamentoonline.jpg"
+                            alt="Compra online" width="300" height="250">
+
+                        <figcaption>
+                            Pagamentos Online
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        E-commerces utilizam APIs de pagamento para processar
+                        transações e receber a resposta do provedor.
+                    </p>
+
+                </div>
+
+
+                <div class="exemplos-img">
+
+                    <figure>
+
+                        <img src="./imagens/appmapas.jpg"
+                            alt="Mapa e localização" width="300" height="250">
+
+                        <figcaption>
+                            Aplicativos de Transporte e Mapas
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        Aplicações podem utilizar APIs de mapas para obter
+                        endereços, rotas, distâncias e tempo de deslocamento.
+                    </p>
+
+                </div>
+
+
+                <div class="exemplos-img">
+
+                    <figure>
+
+                        <img src="./imagens/openfinance.png"
+                            alt="Open Finance" width="300" height="250">
+
+                        <figcaption>
+                            Open Finance
+                        </figcaption>
+
+                    </figure>
+
+                    <p>
+                        Bancos e fintechs podem compartilhar dados financeiros
+                        utilizando APIs mediante autorização do usuário.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="conclusao section" id="conclusao">
+
+            <h2 class="section-title">Conclusão</h2>
+
+            <div class="conclusao-container">
+
+                <p>
+                    As APIs e as integrações de software desempenham um papel fundamental
+                    na construção de sistemas modernos, permitindo que aplicações, serviços,
+                    bancos de dados e plataformas distintas trabalhem de maneira coordenada.
+                </p>
+
+                <p>
+                    Elas contribuem para reutilização de funcionalidades, interoperabilidade,
+                    automação, escalabilidade e criação de novos ecossistemas digitais.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="referencias section" id="referencias">
+
+            <h2 class="section-title">Referências</h2>
+
+            <div class="referencias-container">
+
+                <ol>
+
+                    <li>
+                        <a href="https://www.alura.com.br/artigos/api"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Alura - Entenda o que é uma API e sua importância
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.domo.com/glossary/api-integration"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Domo - What is an API Integration?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=luvsk5YjU6c"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            NEOWAY LABS TECH. O que é API, conceitos, benefícios e exemplos práticos.
+                        </a>
+                    </li>
+
+                    <li>
+                        Fielding, Roy Thomas. Architectural Styles and the Design of
+                        Network-based Software Architectures. 2000.
+                    </li>
+
+                    <li>
+                        Masse, Mark. REST API Design Rulebook. O'Reilly Media, 2011.
+                    </li>
+
+                    <li>
+                        <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            RED HAT. O que é uma API? Documentação e Guias de Arquitetura.
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ibm.com/br-pt/topics/api-integration"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            IBM. O que é integração de API?. Guia de Soluções IBM Cloud.
+                        </a>
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p id="footer-title">
+            APIs e Integrações
+        </p>
+
+        <p>
+            &copy; 2026 - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
