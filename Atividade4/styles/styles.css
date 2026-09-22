@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Eagle+Lake&family=IM+Fell+English:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-pergaminho: #f4ebd9;
+    --texto-jornal: #1a1815;
+    --borda-jornal: #2c2825;
+    --destaque-vermelho: #7a1c1c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2b2622;
+    color: var(--texto-jornal);
+    font-family: 'IM Fell English', Georgia, serif;
+    line-height: 1.4;
+    padding: 20px 10px;
+}
+
+.site-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--bg-pergaminho);
+    padding: 25px 30px;
+    border: 1px solid #000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.header-gazette {
+    text-align: center;
+    border-bottom: 4px double var(--borda-jornal);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid var(--borda-jornal);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.main-title {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.nav-bar {
+    border-top: 1px solid var(--borda-jornal);
+    border-bottom: 1px solid var(--borda-jornal);
+    padding: 6px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: var(--texto-jornal);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    color: var(--destaque-vermelho);
+    text-decoration: underline;
+}
+
+.journal-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--borda-jornal);
+}
+
+.main-article {
+    border-right: 1px solid var(--borda-jornal);
+    padding-right: 25px;
+}
+
+.category-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: var(--texto-jornal);
+    color: var(--bg-pergaminho);
+    padding: 2px 6px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.main-article h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.author {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.article-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    filter: sepia(0.6) contrast(1.1);
+    border: 1px solid var(--borda-jornal);
+}
+
+.article-image figcaption {
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.lead {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.side-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-article {
+    border-bottom: 1px dashed var(--borda-jornal);
+    padding-bottom: 15px;
+}
+
+.sub-article:last-child {
+    border-bottom: none;
+}
+
+.sub-article h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.news-section {
+    padding: 25px 0;
+    border-bottom: 2px solid var(--borda-jornal);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    border-right: 1px solid var(--borda-jornal);
+    padding-right: 15px;
+}
+
+.news-card:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.news-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.wanted-section {
+    padding: 25px 0;
+    border-bottom: 2px solid var(--borda-jornal);
+}
+
+.section-heading {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--borda-jornal);
+    padding-bottom: 5px;
+}
+
+.wanted-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.wanted-card {
+    border: 2px solid var(--borda-jornal);
+    padding: 12px;
+    text-align: center;
+    background-color: #efe3cb;
+}
+
+.wanted-card h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: var(--destaque-vermelho);
+    border-bottom: 1px solid var(--borda-jornal);
+    margin-bottom: 8px;
+}
+
+.wanted-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    filter: sepia(0.8);
+    border: 1px solid #000;
+}
+
+.wanted-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--destaque-vermelho);
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.classifieds-section {
+    padding: 25px 0 10px;
+}
+
+.classifieds-table-wrapper {
+    overflow-x: auto;
+}
+
+.classifieds-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.classifieds-table th,
+.classifieds-table td {
+    border: 1px solid var(--borda-jornal);
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.classifieds-table th {
+    font-family: 'Cinzel', serif;
+    background-color: #e5d8bf;
+}
+
+.footer-gazette {
+    margin-top: 20px;
+    border-top: 4px double var(--borda-jornal);
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    
+    .main-title {
+        font-size: 36px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .journal-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .main-article {
+        border-right: none;
+        border-bottom: 1px solid var(--borda-jornal);
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .news-grid,
+    .wanted-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card {
+        border-right: none;
+        border-bottom: 1px solid var(--borda-jornal);
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .news-card:last-child {
+        border-bottom: none;
+    }
+}
