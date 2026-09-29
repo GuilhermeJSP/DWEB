@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    max-width: 95vw;
+    max-height: 95vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 1. Até 420px -> Cinza / Azul Escuro (#1f4e5b) */
+@media screen and (max-width: 420px) {
+    .caixa {
+        background-color: #1f4e5b;
+    }
+    h2::before {
+        content: "Cinza (Até 420px)";
+    }
+}
+
+/* 2. Maior que 420px até 768px -> Laranja (#e88a38) */
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: #e88a38;
+    }
+    h2::before {
+        content: "Laranja (768px)";
+    }
+}
+
+/* 3. Maior que 768px até 1024px -> Rosa/Magenta (#e600e6) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: #e600e6;
+    }
+    h2::before {
+        content: "Rosa (1024px)";
+    }
+}
+
+/* 4. Maior que 1024px até 1080px -> Vermelho/Rosa claro (#d9534f) */
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: #d9534f;
+    }
+    h2::before {
+        content: "Vermelho (1080px)";
+    }
+}
+
+/* 5. Maior que 1080px até 1366px -> Roxo (#5c4ba4) */
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: #5c4ba4;
+    }
+    h2::before {
+        content: "Roxo (1366px)";
+    }
+}
+
+/* 6. Maior que 1366px até 1920px -> Amarelo (#f0ad4e) */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: #f0ad4e;
+    }
+    h2::before {
+        content: "Amarelo (1920px)";
+    }
+}
+
+/* 7. Maior que 1920px -> Verde (#10a142) */
+@media screen and (min-width: 1921px) {
+    .caixa {
+        background-color: #10a142;
+    }
+    h2::before {
+        content: "Verde (Maior que 1920px)";
+    }
+}
