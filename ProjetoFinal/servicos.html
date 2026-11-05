@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>Gerenciamento de Serviços - Universo Feminino Studio Hair</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-logo">
+                <h1 class="logo-title">Universo Feminino</h1>
+                <span class="logo-subtitle">Studio Hair</span>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="index.html" class="sidebar-item">
+                    <i class="ri-home-4-line"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#" class="sidebar-item disabled">
+                    <i class="ri-calendar-line"></i>
+                    <span>Minha Agenda</span>
+                </a>
+                <a href="#" class="sidebar-item disabled">
+                    <i class="ri-user-heart-line"></i>
+                    <span>Meus Clientes</span>
+                </a>
+                <a href="servicos.html" class="sidebar-item active">
+                    <i class="ri-scissors-line"></i>
+                    <span>Serviços</span>
+                </a>
+                <a href="#" class="sidebar-item disabled">
+                    <i class="ri-settings-4-line"></i>
+                    <span>Gerencial</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-profile">
+                <img src="imagens/Cristiane.jpg" alt="Cristiane" class="profile-avatar-sm">
+                <div class="profile-info-sm">
+                    <h4 class="profile-name">Cristiane Cintia</h4>
+                    <span class="profile-role">Administradora</span>
+                </div>
+            </div>
+        </aside>
+
+        <div class="dashboard-main-wrapper">
+            <header class="mobile-app-header">
+                <a href="index.html" class="back-btn" aria-label="Voltar">
+                    <i class="ri-arrow-left-s-line"></i>
+                </a>
+                <div class="logo-container">
+                    <h1 class="logo-title">Universo Feminino Studio Hair</h1>
+                    <span class="logo-subtitle">Serviços</span>
+                </div>
+            </header>
+
+            <div class="desktop-topbar">
+                <div>
+                    <h2 class="page-title">Serviços</h2>
+                    <p class="page-subtitle">Gerencie os serviços oferecidos.</p>
+                </div>
+                <button onclick="document.getElementById('openModalBtn').click()" class="primary-btn">
+                    <i class="ri-add-line"></i> Novo Serviço
+                </button>
+            </div>
+
+            <main class="dashboard-main">
+                <section class="page-title-section mobile-only" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div>
+                        <h2 class="page-title">Serviços</h2>
+                        <p class="page-subtitle">Gerencie os serviços oferecidos.</p>
+                    </div>
+                    <button id="openModalBtn" class="primary-btn">
+                        <i class="ri-add-line"></i> Novo Serviço
+                    </button>
+                </section>
+
+                <div class="filter-container">
+                    <div class="search-wrapper">
+                        <i class="ri-search-line search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Pesquisar serviço...">
+                    </div>
+                    
+                    <select id="sortSelect" class="sort-select">
+                        <option value="recentes">Mais recentes</option>
+                        <option value="az">Alfabética (A-Z)</option>
+                        <option value="menor-preco">Menor Preço</option>
+                        <option value="maior-preco">Maior Preço</option>
+                        <option value="tempo">Duração</option>
+                    </select>
+                </div>
+
+                <div id="servicesContainer" class="services-container-grid"></div>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-tab">
+                <i class="ri-home-4-line"></i>
+                <span>Início</span>
+            </a>
+            <a href="#" class="nav-tab">
+                <i class="ri-calendar-check-line"></i>
+                <span>Agendamento</span>
+            </a>
+            <a href="#" class="nav-tab">
+                <i class="ri-time-line"></i>
+                <span>Horários</span>
+            </a>
+            <a href="#" class="nav-tab">
+                <i class="ri-settings-4-line"></i>
+                <span>Configurações</span>
+            </a>
+        </nav>
+    </div>
+
+    <div id="serviceModal" class="modal-overlay">
+        <div class="modal-card">
+            <button id="closeModalBtn" class="modal-close" aria-label="Fechar modal">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <h3 id="modalTitle" class="modal-title">Adicionar Serviço</h3>
+
+            <form id="serviceForm" class="model-form">
+                <input type="hidden" id="serviceId">
+
+                <div class="imagem-upload-wrapper">
+                    <div id="imagePreview" class="image-placeholder">
+                        <i class="ri-image-add-line"></i>
+                    </div>
+                    <label for="imageInput" class="upload-label">Adicionar Imagem</label>
+                    <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceName">Nome do serviço</label>
+                    <input type="text" id="serviceName" placeholder="Ex.: Corte Simples" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceDesc">Descrição do serviço</label>
+                    <textarea id="serviceDesc" placeholder="Descreva o serviço, com os principais detalhes..." rows="3"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="servicePrice">Valor (R$)</label>
+                        <input type="number" id="servicePrice" step="0.01" min="0" placeholder="100.00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceTime">Tempo (min)</label>
+                        <input type="number" id="serviceTime" min="1" placeholder="40" required>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" id="cancelModalBtn" class="btn-cancel">Cancelar</button>
+                    <button type="submit" class="btn-save">Salvar serviço</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
