@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Lançamento de Filme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pesquisa do Filme</h1>
+        <p id="contador">Participante: <span id="atual">1</span> de 5</p>
+
+        <form id="pesquisaForm">
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" min="1" max="120" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                    <option value="O">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="opiniao">Opinião:</label>
+                <select id="opiniao" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="4">4 - Ótimo</option>
+                    <option value="3">3 - Bom</option>
+                    <option value="2">2 - Regular</option>
+                    <option value="1">1 - Péssimo</option>
+                </select>
+            </div>
+
+            <button type="submit" id="btnSalvar">Salvar Resposta</button>
+        </form>
+
+        <div id="resultados" class="hidden">
+            <h2>Resultados Finais</h2>
+            <ul>
+                <li>Média de idade: <span id="resMedia">0</span> anos</li>
+                <li>Pessoa mais velha: <span id="resVelha">0</span> anos</li>
+                <li>Pessoa mais nova: <span id="resNova">0</span> anos</li>
+                <li>Responderam "Péssimo": <span id="resPessimo">0</span></li>
+                <li>Porcentagem "Ótimo" e "Bom": <span id="resPorcentagem">0</span>%</li>
+                <li>Mulheres: <span id="resMulheres">0</span> | Homens: <span id="resHomens">0</span> | Outros: <span id="resOutros">0</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
